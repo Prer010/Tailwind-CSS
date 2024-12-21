@@ -1,0 +1,50 @@
+body {
+    width : 100vw;
+}
+
+.container1 {
+    width : 100vw;
+}
+.container1 h1, p{
+    text-align: left;
+}
+
+section {
+display : block;
+}
+
+footer {
+    border : 0px;
+}
+
+footer button {
+ padding : 1rem;
+}
+
+footer img.huddle , p.li {
+text-align: left;
+align-items: left;
+}
+
+@media (max-width : 768px)
+{
+
+    .container1 h1, p{
+text-align: center;
+    }
+
+    .numbers {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer > div {
+        flex-direction: column-reverse;
+        gap : 10px;
+    }
+
+    footer button {
+        padding : 0.5rem;
+    }
+}

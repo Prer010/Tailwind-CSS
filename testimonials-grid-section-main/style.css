@@ -1,0 +1,67 @@
+html {
+    background-color: hsl(0, 0%, 93%);
+}
+
+.barlow-semi-condensed-medium {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size : 13px;
+  }
+  
+  .barlow-semi-condensed-semibold {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.container {
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap : 30px;
+    column-gap : 40px;
+    width : 100vw;
+    padding : 20px 0px;
+}
+
+.container > div {
+    justify-content: space-evenly;
+    padding : 40px;
+}
+
+.Daniel {
+    grid-column: span 2;
+}
+
+.Daniel > div {
+margin-top :  0px !important;
+}
+
+.Patrick {
+grid-column: span 2;
+}
+
+.Kira {
+grid-row : span 2;
+}
+
+img {
+    width : 50px;
+}
+
+@media(max-width : 1023px)
+{
+    .container {
+        display : flex;
+        flex-direction: column;
+    }
+    .Kira {
+        order : 3;
+    }
+
+    img.svg {
+        width : 30%;
+        right : 20px;
+    }
+}
